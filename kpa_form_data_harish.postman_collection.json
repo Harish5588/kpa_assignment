@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "3e26d33f-9e1f-45f8-8a02-1c56df85673c",
+		"name": "kpa_form_data_harish",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46723750",
+		"_collection_link": "https://harish-270481.postman.co/workspace/d23d7139-b4b1-4bbc-8f58-2885c432e5b6/collection/46723750-3e26d33f-9e1f-45f8-8a02-1c56df85673c?action=share&source=collection_link&creator=46723750"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Harish\",\r\n  \"gender\": \"Male\",\r\n  \"mobile\": \"9030123456\",\r\n  \"email\": \"harish@sample.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/formData/saveBasicFormData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"formData",
+						"saveBasicFormData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/formData/getBasicFormDataByFormId/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"formData",
+						"getBasicFormDataByFormId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
