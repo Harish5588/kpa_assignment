@@ -1,6 +1,6 @@
 # KPA Backend Assignment - Harish
 
-This project implements two backend APIs based on the provided Postman collection and Swagger documentation
+This is a backend assignment built using FastAPI and PostgreSQL to implement basic KPA Form APIs.
 
 ---
 
@@ -23,6 +23,16 @@ Fetches the form data by its ID.
 - **API Test Tool:** Postman
 
 ---
+How to run:
+1. Clone the repo
+2. Create a virtual env and activate
+3. Install dependencies: pip install -r requirements.txt
+4. Set up PostgreSQL and .env file
+5. Run with: uvicorn app.main:app --reload
+
+
+Import the included `kpa_form_data.postman_collection.json` in Postman to test the API.
+
 
 
 
